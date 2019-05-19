@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ROUTES } from './app.routes';
 import { HttpClientModule } from '@angular/common/http';
 import { NoIMGPipe } from './pipes/no-img.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 
 
 
@@ -22,7 +23,8 @@ import { NoIMGPipe } from './pipes/no-img.pipe';
     SearchComponent,
     ArtistaComponent,
     NavbarComponent,
-    NoIMGPipe
+    NoIMGPipe,
+    TarjetasComponent
   ],
   imports: [
     BrowserModule,

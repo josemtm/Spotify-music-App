@@ -5,10 +5,4 @@
     </div>
 </div>
 
-<div class="card-columns m-5">
-    <div class="card" *ngFor="let x of artista">
-        <img [src]="x.images| noIMG" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">{{x.name}}</h5>
-        </div>
-    </div>
+<app-tarjetas [items]="artista"></app-tarjetas>
