@@ -16,7 +16,7 @@ export class SpotifyService {
   //para las tarjetas
   getNewRelease(){
     const headers = new HttpHeaders({
-      "Authorization" : "Bearer BQC8UpoiugNoWyOYPu6CtcXZux-hK_SE-w3cBQB4O4AlHIA1-gXSxl_E4kH1spS-ltGX5agHmVV111u-l7o"
+      "Authorization" : "Bearer BQC9bT60t3QP7PRG70f5ywxlgmnqqWLARyB3b4Ohpksyj4j8qfCSgALXzdsb9m-v1_fkaQqgflGav0nW2rM"
     });
 
     return this.http.get("https://api.spotify.com/v1/browse/new-releases",{headers})
@@ -27,7 +27,7 @@ export class SpotifyService {
   //para la pagina de search
   getArtista(termino:string){
     const headers = new HttpHeaders({
-      "Authorization" : "Bearer BQC8UpoiugNoWyOYPu6CtcXZux-hK_SE-w3cBQB4O4AlHIA1-gXSxl_E4kH1spS-ltGX5agHmVV111u-l7o"
+      "Authorization" : "Bearer BQC9bT60t3QP7PRG70f5ywxlgmnqqWLARyB3b4Ohpksyj4j8qfCSgALXzdsb9m-v1_fkaQqgflGav0nW2rM"
     });
 
     return this.http.get(`https://api.spotify.com/v1/search?q=${termino}&type=artist&limit=15`,{headers})
