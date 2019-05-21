@@ -16,7 +16,7 @@ export class SpotifyService {
   //para las tarjetas
   getNewRelease(){
     const headers = new HttpHeaders({
-      "Authorization" : "Bearer BQC9bT60t3QP7PRG70f5ywxlgmnqqWLARyB3b4Ohpksyj4j8qfCSgALXzdsb9m-v1_fkaQqgflGav0nW2rM"
+      "Authorization" : "Bearer BQA-vs6Qo33nPZxfAkN6UtVEIyIRV4U-BJAarSO4hHMW4RnAwWbZSZDtACbbG4TbsXCGilIWdSxFBBNxQtM"
     });
 
     return this.http.get("https://api.spotify.com/v1/browse/new-releases",{headers})
@@ -25,13 +25,25 @@ export class SpotifyService {
             }))
   }
   //para la pagina de search
-  getArtista(termino:string){
+  getArtistas(termino:string){
     const headers = new HttpHeaders({
-      "Authorization" : "Bearer BQC9bT60t3QP7PRG70f5ywxlgmnqqWLARyB3b4Ohpksyj4j8qfCSgALXzdsb9m-v1_fkaQqgflGav0nW2rM"
+      "Authorization" : "Bearer BQA-vs6Qo33nPZxfAkN6UtVEIyIRV4U-BJAarSO4hHMW4RnAwWbZSZDtACbbG4TbsXCGilIWdSxFBBNxQtM"
     });
 
     return this.http.get(`https://api.spotify.com/v1/search?q=${termino}&type=artist&limit=15`,{headers})
             .pipe(map(data=>data["artists"].items));   
 
+  }
+
+  // para la pagina de artista 
+
+  getArtista(id:string){
+    const headers = new HttpHeaders({
+      "Authorization" : "Bearer BQA-vs6Qo33nPZxfAkN6UtVEIyIRV4U-BJAarSO4hHMW4RnAwWbZSZDtACbbG4TbsXCGilIWdSxFBBNxQtM"
+    });
+
+    return this.http.get(`https://api.spotify.com/v1/artists/${id}`,{headers})
+              
+            
   }
 }

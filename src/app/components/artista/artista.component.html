@@ -1,3 +1,16 @@
-<p>
-  artista works!
-</p>
+<app-loading *ngIf=loadingArtista></app-loading>
+
+<div class="row" *ngIf=!loadingArtista>
+    <div class="col-2">
+        <img [src]="artista.images|noIMG  " alt="imagen del artista" class="img-thumbnail img-circle">
+    </div>
+    <div class="col">
+        <h3>{{artista.name}}</h3>
+        <p>
+            <a [href]="artista.external_urls.spotify" target="_blank">Ir a la pagina del artista</a>
+        </p>
+    </div>
+    <div class="col-4">
+        <button class="btn btn-outline-danger" [routerLink]="['/search']">Regresar</button>
+    </div>
+</div>
