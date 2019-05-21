@@ -14,3 +14,27 @@
         <button class="btn btn-outline-danger" [routerLink]="['/search']">Regresar</button>
     </div>
 </div>
+
+<div class="row">
+    <div class="col">
+        <table class="table" style="color:white">
+            <thead>
+                <tr>
+                    <th>Foto</th>
+                    <th>Album</th>
+                    <th>Cancion</th>
+                    <th>Vista Previa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let x of tracks">
+                    <td><img [src]="x.album.images|noIMG " alt="imagen de tracks" class="img-thumb"></td>
+                    <td>{{ x.album.name }}</td>
+                    <td>{{x.name}}</td>
+                    <td><audio [src]=" x.preview_url" controls></audio></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>
