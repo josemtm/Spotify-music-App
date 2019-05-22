@@ -1,27 +1,30 @@
-# Spotiapp
+# SpotiAPP
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+_Aplicacion para ver los artistas mas destacados del momento y una seleccion de tracks de cualquier artista buscado_
 
-## Development server
+## Comenzando 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+-Para correr la aplicacion basta con usar un token generado por tu propia cuenta de spotify y hacer un ng serve desde la terminal
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pre-requisitos 📋
 
-## Build
+Para correr la aplicacion necesitaras tener instalado en tu computador Angular Cli y Node.js
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Construido con 🛠️
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Angular
+* Node.Js
+* TypeScript
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Autores ✒️
 
-## Further help
+Jose Torrealba
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Licencia 📄
+
+Este proyecto está bajo Licencia libre fue creado con fines practicos cualquier puede hacer uso de el
