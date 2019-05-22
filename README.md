@@ -13,18 +13,18 @@ Para correr la aplicacion necesitaras tener instalado en tu computador Angular C
 ```
 
 
-## Construido con 🛠️
+Construido con 🛠️
 
 * Angular
 * Node.Js
 * TypeScript
 
 
-## Autores ✒️
+ Autores 
 
 Jose Torrealba
 
 
-## Licencia 📄
+Licencia
 
 Este proyecto está bajo Licencia libre fue creado con fines practicos cualquier puede hacer uso de el
